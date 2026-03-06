@@ -13,8 +13,8 @@ class Test extends Student {
 }
 
 interface Sports {
-    float sMarks = 10.0f; // Fixed sports weightage
-    void set(); // Method to display sports marks
+    float sMarks = 10.0f; 
+    void set(); 
 }
 
 class Result extends Test implements Sports {
@@ -40,3 +40,4 @@ public class Q3 {
         res.display();
     }
 }
+
