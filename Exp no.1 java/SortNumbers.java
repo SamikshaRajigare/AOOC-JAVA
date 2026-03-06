@@ -9,8 +9,6 @@ public class SortNumbers {
         for (int i = 0; i < 10; i++) {
             arr[i] = sc.nextInt();
         }
-
-        // Bubble Sort
         for (int i = 0; i < 9; i++) {
             for (int j = 0; j < 9 - i; j++) {
                 if (arr[j] > arr[j + 1]) {
