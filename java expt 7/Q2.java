@@ -7,7 +7,7 @@ public class Q2 {
         Scanner sc = new Scanner(System.in);
 
         try {
-            // 1. Accept student information from the user
+        
             System.out.println("--- Enter Student Information ---");
             System.out.print("Name: ");
             String name = sc.nextLine();
@@ -21,8 +21,7 @@ public class Q2 {
             String city = sc.next();
             System.out.print("Phone Number: ");
             long phone = sc.nextLong();
-
-            // 2. Store information in a file using DataOutputStream and FileOutputStream
+            
             FileOutputStream fos = new FileOutputStream(fileName);
             DataOutputStream dos = new DataOutputStream(fos);
 
@@ -36,7 +35,6 @@ public class Q2 {
             dos.close();
             System.out.println("\nData successfully stored in " + fileName);
 
-            // 3. Retrieve and display the data using DataInputStream and FileInputStream
             System.out.println("\n--- Retrieving Data from File ---");
             FileInputStream fis = new FileInputStream(fileName);
             DataInputStream dis = new DataInputStream(fis);
