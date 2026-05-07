@@ -9,16 +9,16 @@ public class Q2 {
 
             Statement stmt = con.createStatement();
 
-            // INSERT
+            
             stmt.executeUpdate("INSERT INTO student VALUES (101, 'Ali', 85)");
 
-            // UPDATE
+        
             stmt.executeUpdate("UPDATE student SET marks=90 WHERE id=101");
 
-            // DELETE
+    
             stmt.executeUpdate("DELETE FROM student WHERE id=101");
 
-            // SELECT
+            
             ResultSet rs = stmt.executeQuery("SELECT * FROM student");
             while (rs.next()) {
                 System.out.println(
