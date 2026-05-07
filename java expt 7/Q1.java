@@ -2,7 +2,7 @@ import java.io.*;
 
 public class Q1{
     public static void main(String[] args) {
-        // Specify the path to your sample.txt file
+    
         File file = new File("sample.txt");
         
         int vowels = 0;
